@@ -1,14 +1,20 @@
-class Store<Type> {
-    item: Type;
-    constructor(item: Type) {
-        this.item = item;
+//generic variables
+class Box<T> {
+    value: T;
+    constructor(value: T) {
+        this.value = value;
     }
-    show() {
-        console.log(this.item);
+    display(): void {
+        console.log(this.value);
     }
 }
-let brand= new Store<string>("Laptop");
-brand.show();
-
-let y= new Store<number>(50000);
-y.show();
+let numBox = new Box<number>(100);
+let strBox = new Box<string>("Hello");
+numBox.display();
+strBox.display();
+//generic functions
+function show<T>(value: T): T {
+    return value;
+}
+console.log(show<number>(10));
+console.log(show<string>("Meghana"));
