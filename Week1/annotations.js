@@ -1,0 +1,11 @@
+"use strict";
+let studentName = "Meghana";
+let studentAge = 21;
+let isPassed = true;
+let marks = 98;
+let city = "Bangalore";
+console.log(studentName);
+console.log(studentAge);
+console.log(isPassed);
+console.log(marks);
+console.log(city);
